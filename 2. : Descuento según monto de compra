@@ -4,3 +4,14 @@ inicio
   escribir "monto de la compra"
   leer monto 
   si monto >= 200 entonces
+    descuento = monto * 0.15
+  sino 
+    si monto >= 100 entonces 
+      descuento = monto * 0.10
+    sino
+      descuento = monto * 0.05
+    finSi
+  finSi
+  total = monto - descuento 
+  escribir "monto a pagar es: ", total
+fin
