@@ -1,0 +1,9 @@
+algoritmo Dolares_pesos ()
+inicio 
+  definir dolares, tipoCambio, pesos como real
+  tipoCambio = 18.49
+  escribir "ingrese la cantidad de dolares"
+  leer dolares
+  pesos = dolares * tipoCambio
+  Escribir "Equivale a ", pesos, " pesos mexicanos"
+fin
