@@ -1,0 +1,11 @@
+algoritmo Precio_final ()
+inicio 
+  definir precio, conDescuento, iva, precioFinal como real
+  escribir "ingrese el precio original"
+  leer precio 
+  conDescuento = precio * 0.80
+  iva = conDescuento * 0,15
+  precioFinal = conDescuento + iva
+  escribir "Precio con descuento: ", conDescuento 
+  escribir "Precio final: ", precioFinal
+fin 
