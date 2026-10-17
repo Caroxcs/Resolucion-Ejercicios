@@ -1,0 +1,6 @@
+algoritmo Descuento ()
+inicio 
+  definir monto, descuento, total como real 
+  escribir "monto de la compra"
+  leer monto 
+  si monto >= 200 entonces
