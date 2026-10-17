@@ -1,0 +1,17 @@
+algoritmo Gastos_transporte ()
+inicio 
+  definir viajes, diaSemana como entero 
+  definir costo, gastos como real
+  escribir "viajes por dia "
+  leer viajes
+  escribir "costo por viaje"
+  leer costo
+  escribir "dias de la semana que viaja"
+  leer diaSemana
+  gastos = viajes * costo * diaSemana
+  escribir "su gasto semanal es de: ", gastos
+fin
+
+
+
+
