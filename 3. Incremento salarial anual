@@ -10,4 +10,4 @@ inicio
         anio <- anio + 1
   FinMientras
   Escribir "Salario final después de 6 años: ", salario
-FinAlgoritmo
+Fin
