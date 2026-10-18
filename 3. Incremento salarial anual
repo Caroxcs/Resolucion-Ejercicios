@@ -1,0 +1,13 @@
+algoritmo incrementoSalarial ()
+inicio 
+  definir salario como real 
+  definir anual como entero 
+  salario = 1500
+  anual = 1
+  mientras anual <= 6 hacer 
+    salario = salario * 1.10 
+    Escribir "Año ", anio, ": $", salario
+        anio <- anio + 1
+  FinMientras
+  Escribir "Salario final después de 6 años: ", salario
+FinAlgoritmo
