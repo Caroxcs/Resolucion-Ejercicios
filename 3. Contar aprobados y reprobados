@@ -1,0 +1,22 @@
+algoritmo aprobados_reprobados ()
+inicio 
+  Definir n, i, aprobados, reprobados Como Entero
+    Definir nota Como Real
+    aprobados <- 0
+    reprobados <- 0
+    Escribir "Cantidad de estudiantes:"
+    Leer n
+    i <- 1
+    Mientras i <= n Hacer
+        Escribir "Nota del estudiante ", i, ":"
+        Leer nota
+        Si nota >= 7 Entonces
+            aprobados <- aprobados + 1
+        Sino
+            reprobados <- reprobados + 1
+        FinSi
+        i <- i + 1 
+    FinMientras
+    Escribir "Aprobados: ", aprobados
+    Escribir "Reprobados: ", reprobados
+FinAlgoritmo
