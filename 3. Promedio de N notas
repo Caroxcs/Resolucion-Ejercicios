@@ -1,0 +1,17 @@
+algoritmo PromedioNotas ()
+inicio 
+  definir n, i como entero 
+  definir nota, suma, promedio como real 
+  suma = 0
+  escribir "total de notas que va a ingresar"
+  leer n 
+  i = 1
+  mientras i <= n hacer 
+    escribir "nota", i, ":"
+    leer nota
+    suma = suma + nota 
+    i = i + 1
+  finMientras
+  promedio = suma / n
+  escribir "el promedio es: ", promedio 
+fin
