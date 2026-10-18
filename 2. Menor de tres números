@@ -1,0 +1,16 @@
+algoritmo meno_Numero ()
+inicio 
+  definir a, b, c, menor como entero
+  escribir "ingrese los tres numeros"
+  leer a, b, c
+  Si (a <= b) Y (a <= c) Entonces
+        menor <- a
+    Sino
+        Si b <= c Entonces
+            menor <- b
+        Sino
+            menor <- c
+        FinSi
+    FinSi
+    escribir "el menor de los tres es: ", menor
+    fin
