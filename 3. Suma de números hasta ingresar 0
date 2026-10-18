@@ -1,0 +1,13 @@
+algoritmo sumaHastaCero ()
+inicio 
+  definir numero, suma como entero
+  suma = 0 
+  escribir "ingrese un numero"
+  leer numero 
+  mientras numero <> 0 hacer
+    suma = suma + numero 
+    escribir "ingrese otro numero (0 para terminar) "
+    leer numero 
+  FinMientras
+  escribir "la suma total es: ", suma
+fin
