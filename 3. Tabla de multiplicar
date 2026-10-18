@@ -1,0 +1,11 @@
+algoritmo tabla_multiplicar ()
+inicio 
+  Definir k, i Como Entero
+  Escribir "Ingrese el número K:"
+  Leer k
+  i <- 1
+  Mientras i <= 12 Hacer
+      Escribir k, " x ", i, " = ", k * i
+      i <- i + 1 // Incrementamos la variable de control
+  FinMientras
+Fin
