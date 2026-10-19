@@ -1,0 +1,31 @@
+algoritmo prestamoSimple ()
+inicio
+
+  definir prestamo, tasa, cuotaMensual, interesTotal como real
+  definir meses como entero
+
+  escribir "ingrese el monto del prestamo"
+  leer prestamo 
+  esccribir "ingrese la taza mensual"
+  leer tasa 
+  escribir "ingrese el numero de meses"
+  leer meses
+
+  interesTotal = monto * tasa * meses
+  cuotaMensual  = (monto + interesTotales) / meses 
+  escribir "la cuota mensual es de: ", cuotaMensual 
+  escribir "el interes total es de: ", interesesTotales
+fin 
+
+
+
+ingrese el monto del prestamo 
+1000
+ingrese la tasa mensual 
+0.02
+ingrese el numero de meses
+12
+interesTotal = 1000 * 0.02 * 12  = 240
+cuotaMensual = (1000 + 240)/ 12 = 103.33
+la cuota mensual es de: 103.33
+el interes total es de: 240
