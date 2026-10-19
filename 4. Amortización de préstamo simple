@@ -13,6 +13,7 @@ inicio
 
   interesTotal = monto * tasa * meses
   cuotaMensual  = (monto + interesTotales) / meses 
+
   escribir "la cuota mensual es de: ", cuotaMensual 
   escribir "el interes total es de: ", interesesTotales
 fin 
