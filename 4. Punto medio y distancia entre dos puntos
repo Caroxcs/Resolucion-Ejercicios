@@ -22,3 +22,18 @@ inicio
   escribir "el punto medio es: ", pMedio
 fin 
 
+ingrese el valor de x1
+1
+ingrese el valor de x2
+4
+ingrese el valor de y1
+2
+ingrese el valor de y2
+6
+
+distancia = rc((4 - 1)^2 + (6 - 2)^2) = = 5
+pMedio_x = (1 + 4) / 2 = 5 / 2 = 2.5
+pMedio_y = (2 + 6) / 2 = 8 / 2 = 4
+
+La distancia entre los dos puntos es: 5
+el punto medio es: (2.5, 4)
