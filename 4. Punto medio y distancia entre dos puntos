@@ -18,10 +18,12 @@ inicio
   pMedio_x = (x1 + x2)/2)
   pMedio_y = (y1 + y2)/2)
 
+  //RESULTADO
   escribir "La distancia entre los dos puntos es: ", distancia
   escribir "el punto medio es: ", pMedio
 fin 
 
+//CORRIDA MANUAL 
 ingrese el valor de x1
 1
 ingrese el valor de x2
