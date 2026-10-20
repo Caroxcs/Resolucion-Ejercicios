@@ -1,0 +1,21 @@
+algoritmo puntoMedio_distancia ()
+inicio 
+  //DECLARACIONES 
+  definir x1, y1, x2, y2 distancia, pMedio como real 
+
+  //CUERPO 
+  escribir "ingrese el valor de x1"
+  leer x1
+  escribir "ingrese el valor de x2"
+  leer x2
+  escribir "ingrese el valor de y1"
+  leer y1
+  escribir "ingrese el valor de y2"
+  leer y2
+
+  //CALCULO
+  distancia = rc((x2 - x1)^2 + (y2 - y1)^2)
+  pMedio = (((x1 + x2)/2)(y1 + y2)/2))
+
+  escribir "La distancia entre los dos puntos es: ", distancia
+  escribir "el punto medio es: ", pMedio
