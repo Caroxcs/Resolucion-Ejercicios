@@ -16,3 +16,8 @@ inicio
 fin
 
 //CORRIDA MANUAL 
+ingrese la cantidad de dolares
+100
+tipoCambio = 18.49
+pesos = 100 * 18.49 = 1849
+Equivale a 1849 pesos mexicanos
