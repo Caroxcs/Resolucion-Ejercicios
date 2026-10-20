@@ -1,0 +1,35 @@
+algoritmo energia_electrica ()
+inicio 
+  //DECLARACIONES
+  definir consumo, costoEnergia, potencia, horas, tarifa como real 
+
+  //CUERPO 
+  escribir "ingrese la potencia (W)"
+  leer potencia 
+  escribir "ingrese las horas de uso diario"
+  leer horas
+  escribir "la tarifa por kWh"
+  leer tarifa 
+
+  //CALCULO
+  consumo = (potencia / 1000) * horas * 30 
+  costoEnergia = consumo * tarifa 
+
+  //RESULTADO 
+  escribir "consumo mensual es de: ", consumo 
+  escribir "el costo total es de: ", costoEnergia
+fin 
+
+
+//CORRIDA MANUAL 
+ingrese la potencia (w)
+35
+ingrese las horas de uso diario 
+4
+la tarifa por kWh
+2.5
+consumo = (35 / 1000) * 4 * 30 = 4,2
+costoEnergia = 4,2 * 2.5 = 10,5
+
+consumo mensual es de: 4,2
+el costo total es de: 10,5
