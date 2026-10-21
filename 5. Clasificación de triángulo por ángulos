@@ -1,0 +1,47 @@
+Algoritmo triangulo_angulos ()
+inicio 
+  //DEFINICIONES 
+  Definir a, b, c, mayor Como Real
+  Escribir "Ángulo 1:"
+  Leer a
+  Escribir "Ángulo 2:"
+  Leer b
+  Escribir "Ángulo 3:"
+  Leer c
+
+  //CUERPO
+  Si (a <= 0) O (b <= 0) O (c <= 0) O (a + b + c <> 180) Entonces
+      Escribir "No forman un triángulo"
+  Sino
+      mayor <- a
+      Si b > mayor Entonces
+          mayor <- b
+      FinSi
+      Si c > mayor Entonces
+          mayor <- c
+      FinSi
+      Si mayor < 90 Entonces
+          Escribir "Acutángulo"
+      Sino
+          Si mayor = 90 Entonces
+              Escribir "Rectángulo"
+          Sino
+              Escribir "Obtusángulo"
+          FinSi
+      FinSi
+FinSi
+Fin
+
+//CORRIDA MANUAL
+Ángulo 1:
+60
+Ángulo 2:
+60
+Ángulo 3:
+60
+Si (60 <= 0) O (60 <= 0) O (60 <= 0) O (60 + 60 + 60 <> 180) -> Falso (Sino)
+mayor <- 60
+Si 60 > 60 -> Falso
+Si 60 > 60 -> Falso
+Si mayor < 90 (60 < 90) -> Verdadero
+Escribir "Acutángulo"
