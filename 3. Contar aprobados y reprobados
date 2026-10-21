@@ -1,22 +1,42 @@
 algoritmo aprobados_reprobados ()
 inicio 
+  //DECLARACIONES
   Definir n, i, aprobados, reprobados Como Entero
-    Definir nota Como Real
-    aprobados <- 0
-    reprobados <- 0
-    Escribir "Cantidad de estudiantes:"
-    Leer n
-    i <- 1
-    Mientras i <= n Hacer
-        Escribir "Nota del estudiante ", i, ":"
-        Leer nota
-        Si nota >= 7 Entonces
-            aprobados <- aprobados + 1
-        Sino
-            reprobados <- reprobados + 1
-        FinSi
-        i <- i + 1 
-    FinMientras
-    Escribir "Aprobados: ", aprobados
-    Escribir "Reprobados: ", reprobados
-FinAlgoritmo
+  Definir nota Como Real
+
+  //CUERPO
+  aprobados <- 0
+  reprobados <- 0
+  Escribir "Cantidad de estudiantes:"
+  Leer n
+  i <- 1
+  Mientras i <= n Hacer
+      Escribir "Nota del estudiante ", i, ":"
+      Leer nota
+      Si nota >= 7 Entonces
+          aprobados <- aprobados + 1
+      Sino
+          reprobados <- reprobados + 1
+      FinSi
+      i <- i + 1 
+  FinMientras
+
+  //RESULTADO
+  Escribir "Aprobados: ", aprobados
+  Escribir "Reprobados: ", reprobados
+Fin
+
+//CORRIDA MANUAL
+Cantidad de estudiantes:
+3
+Nota del estudiante 1:
+8
+Si 8 >= 7 -> Verdadero -> aprobados = 1
+Nota del estudiante 2:
+5
+Si 5 >= 7 -> Falso -> Sino -> reprobados = 1
+NOta del estudiante 3:
+9
+Si 9 >= 7 -> Verdadero -> aprobados = 2
+Aprobados: 2
+Reprobados: 1
