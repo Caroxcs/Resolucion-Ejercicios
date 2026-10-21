@@ -1,0 +1,8 @@
+algoritmo validacion_fecha ()
+inicio 
+  //DECLARACIONES 
+  definir dia, mes, anio. maxDia como entero 
+  definir valida como logico
+
+  //CUERPO
+  
