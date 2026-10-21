@@ -1,0 +1,50 @@
+algoritmo viaje_peajes ()
+inicio 
+  //DECLARACIONES 
+  Definir distancia, consumo, precio_combustible, costo_peaje, litros, costo_combustible, costo_peajes, total Como Real
+  Definir num_peajes Como Entero
+
+  //CUERPO
+  Escribir "Distancia:"
+  Leer distancia
+  Escribir "Consumo :"
+  Leer consumo
+  Escribir "Precio del combustible por litro:"
+  Leer precio_combustible
+  Escribir "Número de peajes:"
+  Leer num_peajes
+  Escribir "Costo unitario del peaje:"
+  Leer costo_peaje
+
+  //CALCULO
+  litros <- distancia / consumo
+  costo_combustible <- litros * precio_combustible
+  costo_peajes <- num_peajes * costo_peaje
+  total <- costo_combustible + costo_peajes
+
+  //RESULTADO
+  Escribir "Litros necesarios: ", litros
+  Escribir "Costo de combustible: ", costo_combustible
+  Escribir "Costo de peajes: ", costo_peajes
+  Escribir "Costo total: ", total
+Fin
+
+//CORRIDA MANUAL 
+Distancia:
+300
+Consumo :
+12
+Precio del combustible por litro:
+4.50
+Número de peajes:
+3
+Costo unitario del peaje:
+2.50
+litros <- 300 / 12 = 25
+costo_combustible <- 25 * 4.50 = 112.5
+costo_peajes <- 3 * 2.50 = 7.5
+total <- 112.5 + 7.5 = 120
+Litros necesarios: 25
+Costo de combustible: 112.5
+Costo de peajes: 7.5
+Costo total: 120
