@@ -1,13 +1,29 @@
 algoritmo Promedio_Notas ()
 inicio 
+  //DECLARACIONES
   definir n1 , n2, n3, promedio como real
+
+  //CUERPO
   Escribir "ingrese la primera nota"
   leer n1
   Escribir "ingrese la segunda nota"
   leer n2
   Escribir "ingrese la tercera nota"
   leer n3
+
+  //CALCULO
   promedio = (n1 + n2 + n3) / 3
+
+  //RESULTADO
   Escribir "el promedio es: ", promedio
 fin
 
+//CORRIDA MANUAL
+ingrese la primera nota
+80
+ingrese la segunda nota
+90
+ingrese la tercera nota
+100
+promedio = (80 + 90 + 100) / 3 = 270 / 3 = 90
+el promedio es: 90
