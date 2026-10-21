@@ -1,6 +1,8 @@
 algoritmo sumaHastaCero ()
 inicio 
+  //DECLARACIONES
   definir numero, suma como entero
+  //CUERPO
   suma = 0 
   escribir "ingrese un numero"
   leer numero 
@@ -9,5 +11,29 @@ inicio
     escribir "ingrese otro numero (0 para terminar) "
     leer numero 
   FinMientras
+
+  //RESULTADO
   escribir "la suma total es: ", suma
 fin
+
+
+//CORRIDA MANUAL 
+ingrese un numero
+5
+ingrese otro numero (0 para terminar)
+3
+ingrese otro numero (0 para terminar)
+-2
+ingrese otro numero (0 para terminar)
+0
+Mientras numero <> 0 (5 <> 0 -> Verdadero):
+suma = 0 + 5 = 5
+lee numero = 3
+Mientras numero <> 0 (3 <> 0 -> Verdadero):
+suma = 5 + 3 = 8
+lee numero = -2
+Mientras numero <> 0 (-2 <> 0 -> Verdadero):
+suma = 8 + (-2) = 6
+Lee numero = 0
+Mientras numero <> 0 (0 <> 0 -> Falso) -> Fin del ciclo
+la suma total es: 6
