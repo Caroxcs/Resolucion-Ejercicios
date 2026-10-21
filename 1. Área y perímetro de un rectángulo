@@ -1,12 +1,29 @@
 algoritmo A_Rectangulo ()
 inicio 
+  //DECLARACIONES
   definir largo, ancho, area, perimetro como real 
+
+  //CUERPO
   escribir "ingrese el largo"
   leer largo 
   escribir "ingrese el ancho"
   leer ancho
+
+  //CALCULO
   area = largo * ancho 
   perimetro = 2 * (largo + ancho)
+
+  //RESULTADO
   escribir "area es: ", area
   escribir "perimetro es: ", perimetro 
 fin
+
+//CORRIDA MANUAL
+ingrese el largo
+5
+ingrese el ancho
+3
+area = 5 * 3 = 15
+perimetro = 2 * (5 + 3) = 2 * 8 = 16
+area es: 15
+perimetro es: 16
