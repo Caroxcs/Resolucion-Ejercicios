@@ -1,6 +1,9 @@
 algoritmo Descuento ()
 inicio 
+  //DECLARACIONES
   definir monto, descuento, total como real 
+
+  //CUERPO
   escribir "monto de la compra"
   leer monto 
   si monto >= 200 entonces
@@ -12,6 +15,17 @@ inicio
       descuento = monto * 0.05
     finSi
   finSi
+
+  //CALCULO
   total = monto - descuento 
+
+  //RESULTADO
   escribir "monto a pagar es: ", total
 fin
+
+//CORRIDA MANUAL
+ingrese monto de la compra
+250
+descuento = 250 * 0.15 = 37.5
+total = 250 - 37.5 = 212.5
+monto a pagar es: 212.5
