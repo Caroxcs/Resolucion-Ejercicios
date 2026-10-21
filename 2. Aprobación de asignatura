@@ -1,6 +1,9 @@
 algoritmo Aprobacion ()
 inicio 
-  definir promedio como real
+  //DECLARACIONES
+  definir promedio como real\
+
+  //CUERPO
   esccribir "promedio final"
   leer promedio 
   si promedio >=7 entonces 
@@ -9,3 +12,8 @@ inicio
     escribir "NO APROBADO"
   FinSi
 fin
+
+//CORRIDA MANUAL
+promedio final
+8
+APROBADO
