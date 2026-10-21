@@ -1,6 +1,9 @@
 algoritmo Sueldo_semanal ()
 inicio 
+  //DECLARACIONES
   definir horas, tarifa, sueldo como real 
+
+  //CUERPO
   escribir "horas trabajadas"
   leer horas
   escribir "pago por horas"
@@ -10,5 +13,17 @@ inicio
   Sino 
     sueldo = (40 * tarifa) + ((horas - 40) * tarifa * 2)
   finSi 
+
+  //RESULTADO
   escribir "sueldo semanal: ", sueldo 
-finAlgoritmo 
+fin
+
+
+//CORRIDA MANUAL
+ingrese horas trabajadas
+45
+ingrese pago por horas
+10
+si 45 <= 40 -> Falso
+Sino -> sueldo = (40 * 10) + ((45 - 40) * 10 * 2) = 400 + (5 * 10 * 2) = 400 + 100 = 500
+sueldo semanal: 500
