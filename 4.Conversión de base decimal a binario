@@ -1,0 +1,35 @@
+algoritmo decimal_binario ()
+inicio 
+  //DECLARACIONES
+  definir n, b0, b1, b2, b3, b4, b5, b6, b7 como entero
+
+  //CUERPO
+  escribir "ingrese un numero "
+  Leer n
+
+  //CALCULO
+  b0 <- n mod 2;  n <- n div 2
+  b1 <- n mod 2;  n <- n div 2
+  b2 <- n mod 2;  n <- n div 2
+  b3 <- n mod 2;  n <- n div 2
+  b4 <- n mod 2;  n <- n div 2
+  b5 <- n mod 2;  n <- n div 2
+  b6 <- n mod 2;  n <- n div 2
+  b7 <- n mod 2
+
+  //RESULTADO
+  Escribir "el numero en binario es: ", b7, b6, b5, b4, b3, b2, b1, b0
+Fin
+
+//CORRIDA MANUAL
+ingrese un numero
+45
+b0 <- 45 mod 2 = 1; n <- 45 div 2 = 22
+b1 <- 22 mod 2 = 0; n <- 22 div 2 = 11
+b2 <- 11 mod 2 = 1; n <- 11 div 2 = 5
+b3 <- 5 mod 2 = 1; n <- 5 div 2 = 2
+b4 <- 2 mod 2 = 0; n <- 2 div 2 = 1
+b5 <- 1 mod 2 = 1; n <- 1 div 2 = 0
+b6 <- 0 mod 2 = 0; n <- 0 div 2 = 0
+b7 <- 0 mod 2 = 0; n <- 0 div 2 = 0
+el numero en binario es: 00101101
