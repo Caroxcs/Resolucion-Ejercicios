@@ -1,6 +1,9 @@
 algoritmo meno_Numero ()
 inicio 
+  //DECLARACIONES
   definir a, b, c, menor como entero
+
+  //CUERPO
   escribir "ingrese los tres numeros"
   leer a, b, c
   Si (a <= b) Y (a <= c) Entonces
@@ -11,6 +14,18 @@ inicio
         Sino
             menor <- c
         FinSi
-    FinSi
-    escribir "el menor de los tres es: ", menor
-    fin
+  FinSi
+
+  //RESULTADO
+  escribir "el menor de los tres es: ", menor
+fin
+
+//CORRIDA MANUAL 
+ingrese los tres numeros
+10
+4
+15
+Si (10 <= 4) Y (10 <= 15) -> Falso
+Sino -> Si 4 <= 15 -> Verdadero
+menor = 4
+el menor de los tres es: 4
