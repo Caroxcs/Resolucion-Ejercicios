@@ -1,1 +1,37 @@
+algoritmo Estacion ()
+inicio
+  //DECLARACIONES 
+  definir mes, dia como entero 
 
+  //CUERPO 
+  escribir "ingrese el mes"
+  leer mes 
+  escribir "ingreese el dia"
+  leer dia 
+
+  //CALCULO
+  f = mes * 100 + dia
+    Si (f >= 1221) O (f <= 320) Entonces
+      Escribir "Verano"
+    Sino
+      Si f <= 620 Entonces
+        Escribir "Otoño"
+      Sino
+        Si f <= 922 Entonces
+          Escribir "Invierno"
+        Sino
+          Escribir "Primavera"
+        FinSi
+      FinSi
+    FinSi
+Fin
+
+//CORRIDA MANUAL
+ingrese el mes
+4
+ingreese el dia
+15
+f = 4 * 100 + 15 = 415
+Si (415 >= 1221) O (415 <= 320) -> Falso
+Sino -> Si 415 <= 620 -> Verdadero
+Otoño
