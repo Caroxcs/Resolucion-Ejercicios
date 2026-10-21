@@ -1,0 +1,40 @@
+algoritmo tarifa_taxi ()
+inicio 
+  //DECLARACIONES
+  definir km, base, total como real 
+  definir noche como caracter
+
+  //CUERPO
+  escribir "ïngrese los kilometros"
+  leer km
+  escribir "esta de noche?"
+  leer noche 
+
+  //CALCULO
+  base = 2.00 + 1.50 * km
+  total = base
+  si km > 10 entonces 
+    total = total + base * 0.20
+  finSi
+  si noche = "s" entonces 
+    total = total + base * 0.30
+  finSi 
+
+  //RESULTADO 
+  escribir "tarifa base:", base
+  escribir "total pagar: ", total 
+fin 
+
+//CORRIDA MANUAL
+ingrese los kilometros
+12
+esta de noche?
+s
+
+base = 2.00 + 1.50 * 12 = 2.00 + 18.00 = 20.00
+total = 20.00
+
+Si km > 10 (12 > 10) -> Verdadero -> total = 20.00 + 20.00 * 0.20 = 20.00 + 4.00 = 24.00
+Si noche = "s" ("s" = "s") -> Verdadero -> total = 24.00 + 20.00 * 0.30 = 24.00 + 6.00 = 30.00
+tarifa base: 20
+total pagar: 30
