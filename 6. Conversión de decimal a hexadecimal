@@ -1,0 +1,54 @@
+Algoritmo Conversión_decimal_hexadecimal ()
+inicio
+  //DECLARACIONES
+  Definir num, residuo como Entero
+  Definir hex, digito como Cadena
+
+  //CUERPO
+  Escribir "Ingrese un número decimal entero:"
+  Leer num
+  Si num == 0 Entonces
+     hex <- "0"
+  Sino
+     hex <- ""
+     Mientras num > 0 Hacer
+       residuo <- num MOD 16
+          Si residuo < 10 Entonces
+              digito <- ConvertirATexto(residuo)
+          Sino
+              Segun residuo Hacer
+                10: digito <- "A"
+                11: digito <- "B"
+                12: digito <- "C"
+                13: digito <- "D"
+                14: digito <- "E"
+                15: digito <- "F"
+              FinSegun
+          FinSi
+          hex <- digito + hex
+          num <- trunc(num / 16)
+      FinMientras
+  FinSi   
+  Escribir "El número en hexadecimal es: ", hex
+FinProceso
+
+//CORRIDA MANUAL
+Prueba con n = 3 y notas: 8.5, 5.0, 10.0
+Nota 1 (8.5):
+suma = 8.5, mayor = 8.5, menor = 8.5
+aprobados = 1, reprobados = 0
+Nota 2 (5.0):
+suma = 8.5 + 5.0 = 13.5
+mayor = 8.5, menor = 5.0
+aprobados = 1, reprobados = 1
+Nota 3 (10.0):
+suma = 13.5 + 10.0 = 23.5
+mayor = 10.0, menor = 5.0
+aprobados = 2, reprobados = 1
+Cálculo final: promedio = 23.5 / 3 = 7.83
+Resultados impresos:
+Promedio: 7.83
+Calificación mayor: 10.0
+Calificación menor: 5.0
+Aprobados (>=7): 2
+Reprobados: 1
