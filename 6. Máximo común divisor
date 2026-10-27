@@ -1,0 +1,19 @@
+algoritmo MáximoDivisor ()
+inicio 
+  //DECLARACIONES
+  definir a, b, r como entero
+
+  //CUERPO
+  escribir "ingrese el primer numero"
+  leer a
+  escribir "ingrese el segundo numero"
+  leer b 
+
+  //CALCULO
+  Mientras b <> 0 hacer
+    residuo <- a MOD b
+      a <- b
+      b <- residuo
+  FinMientras
+Escribir "minimo comun divisor es: ", a
+fin 
