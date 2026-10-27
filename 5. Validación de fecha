@@ -1,8 +1,45 @@
 algoritmo validacion_fecha ()
 inicio 
   //DECLARACIONES 
-  definir dia, mes, anio. maxDia como entero 
-  definir valida como logico
+  Definir dia, mes, anio, maxdia Como Entero;
+  Definir valida Como Logico;
 
   //CUERPO
-  
+  Escribir "Día:";
+  Leer dia;
+  Escribir "Mes:";
+  Leer mes;
+  Escribir "Año:";
+  Leer anio;
+
+  valida <- Verdadero;
+  maxdia <- 31;
+
+  //CALCULO
+  Si (mes < 1) O (mes > 12) O (anio < 1) O (dia < 1) Entonces
+    valida <- Falso;
+  Sino
+    Si (mes = 4) O (mes = 6) O (mes = 9) O (mes = 11) Entonces
+      maxdia <- 30;
+    Sino
+       Si mes = 2 Entonces
+          Si ((anio MOD 4 = 0) Y (anio MOD 100 <> 0)) O (anio MOD 400 = 0) Entonces
+            maxdia <- 29;
+          Sino
+             maxdia <- 28;
+          FinSi
+       FinSi
+   FinSi
+  Si dia > maxdia Entonces
+     valida <- Falso;
+   FinSi
+ FinSi
+  //RESILTADOS
+  Si valida Entonces
+    Escribir "Fecha válida";
+  Sino
+     Escribir "Fecha inválida";
+  FinSi
+FinProceso  
+
+//CORRIDA MANUAL
