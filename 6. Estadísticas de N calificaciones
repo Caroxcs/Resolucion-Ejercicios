@@ -1,0 +1,99 @@
+Algoritmo EstadisticasCalificacionesSinPara ()
+inicio
+    //DECLARACIONES
+    Definir N, i, aprobados, reprobados Como Entero
+    Definir nota, suma, mayor, menor Como Real
+
+    //CUERPO
+    Escribir "Cantidad de calificaciones:"
+    Leer N
+    
+    Si N <= 0 Entonces
+        Escribir "N debe ser mayor que 0"
+    Sino
+        suma <- 0
+        aprobados <- 0
+        reprobados <- 0
+        i <- 1
+        
+        Mientras i <= N Hacer
+            Escribir "Nota ", i, ":"
+            Leer nota
+            suma <- suma + nota
+            
+            Si i = 1 Entonces
+                mayor <- nota
+                menor <- nota
+            Sino
+                Si nota > mayor Entonces
+                    mayor <- nota
+                FinSi
+                Si nota < menor Entonces
+                    menor <- nota
+                FinSi
+            FinSi
+            
+            Si nota >= 7 Entonces
+                aprobados <- aprobados + 1
+            Sino
+                reprobados <- reprobados + 1
+            FinSi
+            
+            i <- i + 1
+        FinMientras
+        
+        Escribir "Promedio: ", suma / N
+        Escribir "Mayor: ", mayor
+        Escribir "Menor: ", menor
+        Escribir "Aprobados: ", aprobados
+        Escribir "Reprobados: ", reprobados
+    FinSi
+FinProceso
+
+//CORRIDA MANUAL
+- Ingreso de datos iniciales:
+  N = 3
+  N <= 0 -> Falso (pasa al Sino)
+
+- Inicialización:
+  suma = 0
+  aprobados = 0
+  reprobados = 0
+  i = 1
+
+- Iteración 1 (i = 1):
+  i <= N (1 <= 3) -> Verdadero
+  Ingresa nota = 8.5
+  suma = 0 + 8.5 = 8.5
+  ¿i = 1? -> Verdadero -> mayor = 8.5, menor = 8.5
+  ¿nota >= 7? (8.5 >= 7) -> Verdadero -> aprobados = 0 + 1 = 1
+  i = 1 + 1 = 2
+
+- Iteración 2 (i = 2):
+  i <= N (2 <= 3) -> Verdadero
+  Ingresa nota = 5.0
+  suma = 8.5 + 5.0 = 13.5
+  ¿i = 1? -> Falso
+  ¿nota > mayor? (5.0 > 8.5) -> Falso
+  ¿nota < menor? (5.0 < 8.5) -> Verdadero -> menor = 5.0
+  ¿nota >= 7? (5.0 >= 7) -> Falso -> reprobados = 0 + 1 = 1
+  i = 2 + 1 = 3
+
+- Iteración 3 (i = 3):
+  i <= N (3 <= 3) -> Verdadero
+  Ingresa nota = 10.0
+  suma = 13.5 + 10.0 = 23.5
+  ¿i = 1? -> Falso
+  ¿nota > mayor? (10.0 > 8.5) -> Verdadero -> mayor = 10.0
+  ¿nota < menor? (10.0 < 5.0) -> Falso
+  ¿nota >= 7? (10.0 >= 7) -> Verdadero -> aprobados = 1 + 1 = 2
+  i = 3 + 1 = 4
+
+- Fin del ciclo (i = 4, 4 <= 3 es Falso)
+
+- Resultados impresos en pantalla:
+  Promedio: 23.5 / 3 = 7.8333
+  Mayor: 10.0
+  Menor: 5.0
+  Aprobados: 2
+  Reprobados: 1
