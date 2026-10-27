@@ -17,3 +17,13 @@ inicio
   FinMientras
 Escribir "minimo comun divisor es: ", a
 fin 
+
+//CORRIDA MANUAL
+Prueba con a = 48, b = 18
+residuo = 48 - (48 / 18) * 18 -> 48 - (2 * 18) -> 48 - 36 = 12
+a = 18, b = 12
+residuo = 18 - (18 / 12) * 12 -> 18 - (1 * 12) -> 18 - 12 = 6
+a = 12, b = 6
+residuo = 12 - (12 / 6) * 6 -> 12 - (2 * 6) -> 12 - 12 = 0
+a = 6, b = 0
+Fin del ciclo (b = 0). Resultado impreso: El Máximo Común Divisor (MCD) es: 6
