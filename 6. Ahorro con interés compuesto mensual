@@ -1,0 +1,33 @@
+Algoritmo Ahorro ()
+Inicio
+  //DECLARACIONES
+  Definir saldo, deposito, tasa Como Real
+  Definir N, mes Como Entero
+  //UERPO
+  Escribir "Capital inicial:"
+  Leer saldo
+  Escribir "Depósito mensual:"
+  Leer deposito
+  Escribir "Número de meses:"
+  Leer N
+  Escribir "Tasa mensual (%), por ejemplo 1.5:"
+  Leer tasa
+   // CÁLCULO 
+  mes <- 1
+  Mientras mes <= N Hacer
+     saldo <- saldo + deposito
+     saldo <- saldo + saldo * tasa / 100
+     Escribir "Mes ", mes, ": ", saldo
+     mes <- mes + 1
+  FinMientras
+Fin
+
+ //CORRIDA MANUAL 
+ Prueba con capitalInicial = 100, depositoMensual = 50, n = 2, tasa = 0.015
+saldo = 100
+Mes 1:
+saldo = (100 + 50) * (1 + 0.015) -> 150 * 1.015 = 152.25
+Imprime: Mes 1 - Saldo acumulado: $152.25
+Mes 2:
+saldo = (152.25 + 50) * (1 + 0.015) -> 202.25 * 1.015 = 205.28375
+Imprime: Mes 2 - Saldo acumulado: $205.28375
