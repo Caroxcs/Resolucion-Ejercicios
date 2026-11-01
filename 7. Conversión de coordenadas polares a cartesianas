@@ -1,0 +1,22 @@
+algoritmo ConversiónCoordenadas ()
+inicio 
+  //DECLARACIONES 
+    Definir r, theta, rad, x, y Como Real
+    // CUERPO
+    Escribir "Ingrese radio y angulo en grados:"
+    Leer r, theta
+    // CALCULO
+    rad <- theta * (PI / 180)
+    x <- r * cos(rad)
+    y <- r * sen(rad)
+    // RESULTADO
+    Escribir "X: ", x, ", Y: ", y
+FinAlgoritmo
+
+//CORRIDA MANUAL
+r=10, theta=90.
+Cálculo:
+rad = 90*(PI/180) = 1.57.
+x = 10*cos(1.57) = 0.
+y = 10*sen(1.57) = 10. 
+Resultado: x: 0, y: 10.
