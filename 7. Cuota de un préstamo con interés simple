@@ -1,0 +1,24 @@
+algoritmo CuotaPréstamoSimple ()
+inicio 
+  //DECLARACIONES
+  Definir cap, tasa, meses, intTotal, cuota Como Real
+  
+    // CUERPO
+    Escribir "Ingrese capital, tasa (decimal) y meses:"
+    Leer cap, tasa, meses
+    
+    // CALCULO
+    intTotal <- cap * tasa * (meses / 12)
+    cuota <- (cap + intTotal) / meses
+    
+    // RESULTADO
+    Escribir "Interes total: ", intTotal
+    Escribir "Cuota mensual: ", cuota
+FinAlgoritmo
+
+//CORRIDA MANUAL
+cap=1000, tasa=0.12, meses=6. 
+Cálculo:
+intTotal = 1000*0.12*(6/12) = 60. 
+cuota = (1000+60)/6 = 176.66. 
+Resultado: Interés: 60, Cuota: 176.66.
