@@ -1,0 +1,33 @@
+algoritmo ClasificacionRendimientoAsistencia ()
+inicio
+  //DECLARACIONES
+    Definir prom, asis Como Real
+    Definir cat Como Caracter
+    
+    // CUERPO
+    Escribir "Ingrese promedio y asistencia:"
+    Leer prom, asis
+    
+    // CALCULO
+    Si prom >= 9 Y asis >= 90 Entonces
+        cat <- "Excelente"
+    Sino
+        Si prom >= 7 Y asis >= 80 Entonces
+            cat <- "Bueno"
+        Sino
+            Si prom >= 6 Y asis >= 70 Entonces
+                cat <- "Regular"
+            Sino
+                cat <- "Deficiente"
+            FinSi
+        FinSi
+    FinSi
+    
+    // RESULTADO
+    Escribir "Categoria: ", cat
+FinAlgoritmo
+
+//CORRIDA MANUAL
+prom=8, asis=85.
+Cálculo: (8>=9) Falso. (8>=7 Y 85>=80) Verdadero -> "Bueno". 
+Resultado: Categoria: Bueno.
