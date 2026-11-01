@@ -1,0 +1,24 @@
+Algoritmo HipotenusaAreaTriRectangulo ()
+inicio 
+    // DECLARACION
+    Definir cat1, cat2, hip, area Como Real
+    
+    // CUERPO
+    Escribir "Ingrese cateto 1 y cateto 2:"
+    Leer cat1, cat2
+    
+    // CALCULO
+    hip <- rc(cat1^2 + cat2^2)
+    area <- (cat1 * cat2) / 2
+    
+    // RESULTADO
+    Escribir "Hipotenusa: ", hip
+    Escribir "Area: ", area
+FinAlgoritmo
+
+//CORRIDA MANUAL
+cat1=3, 
+cat2=4.
+Cálculo: hip = raiz(3^2 + 4^2) = 5.
+area = (3*4)/2 = 6. 
+Resultado: Hipotenusa: 5, Área: 6.
