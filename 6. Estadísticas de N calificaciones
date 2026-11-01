@@ -1,4 +1,4 @@
-Algoritmo EstadisticasCalificacionesSinPara ()
+Algoritmo EstadisticasCalificaciones()
 inicio
     //DECLARACIONES
     Definir N, i, aprobados, reprobados Como Entero
