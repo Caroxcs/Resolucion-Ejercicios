@@ -1,0 +1,28 @@
+algoritmo CostoPesoVolumétrico ()
+inicio 
+  //DECLARACIONES 
+    Definir pesoReal, largo, ancho, alto, pesoVol, pesoCobrar, costo Como Real
+    // CUERPO
+    Escribir "Ingrese peso real:"
+    Leer pesoReal
+    Escribir "Ingrese largo, ancho y alto:"
+    Leer largo, ancho, alto
+    // CALCULO
+    pesoVol <- (largo * ancho * alto) / 5000
+    Si pesoReal > pesoVol Entonces
+        pesoCobrar <- pesoReal
+    Sino
+        pesoCobrar <- pesoVol
+    FinSi
+    costo <- pesoCobrar * 2.50
+    // RESULTADO
+    Escribir "Peso a cobrar: ", pesoCobrar
+    Escribir "Costo total: $", costo
+FinAlgoritmo
+
+pesoReal=10, L=50, A=40, H=30. 
+Cálculo:
+pesoVol = (50*40*30)/5000 = 12. Mayor entre 10 y 12 es 12.
+costo = 12 * 2.50 = 30.
+
+Resultado: Cobrar: 12, Costo: 30
