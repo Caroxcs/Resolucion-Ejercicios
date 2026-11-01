@@ -19,3 +19,13 @@ inicio
     Escribir "Total depositado: ", totalDepositado
     Escribir "Valor futuro: ", vf
 FinAlgoritmo
+
+
+//CORRIDA MANUAL
+Datos: deposito=100
+tasa=0.1
+meses=2. 
+
+Cálculo: totalDepositado = 100*2 = 200. 
+vf = 100 * (((1+0.1)^2 - 1) / 0.1) = 210. 
+Resultado: Total: 200, Futuro: 210.
