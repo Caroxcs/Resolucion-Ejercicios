@@ -1,4 +1,21 @@
-algoritmo valorFuturo ()
+Algoritmo ValorFuturoAnualidad ()
 inicio
-  //DECLARACIONES 
-  definir 
+    //DECLARACIONES
+    Definir deposito, tasa, meses, vf, totalDepositado Como Real
+
+    //CUERPO
+    Escribir "Ingrese el depósito mensual:"
+    Leer deposito
+    Escribir "Ingrese la tasa de interés mensual (en decimal, ej. 0.05):"
+    Leer tasa
+    Escribir "Ingrese el número de meses:"
+    Leer meses
+
+    //CALCULO
+    totalDepositado <- deposito * meses
+    vf <- deposito * (((1 + tasa)^meses - 1) / tasa)
+
+    //RESULTADO
+    Escribir "Total depositado: ", totalDepositado
+    Escribir "Valor futuro: ", vf
+FinAlgoritmo
