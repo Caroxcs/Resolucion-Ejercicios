@@ -1,0 +1,29 @@
+algoritmo ()
+inicio 
+  //DECLARACIONES 
+    Definir horas, tarifa Como Real
+    Definir noct Como Caracter
+    
+    // CUERPO
+    Escribir "Ingrese horas y si es nocturno (S/N):"
+    Leer horas, noct
+    
+    // CALCULO
+    tarifa <- horas * 1.50
+    Si horas > 8 Entonces
+        tarifa <- tarifa * 1.25
+    FinSi
+    Si noct = "S" O noct = "s" Entonces
+        tarifa <- tarifa * 1.30
+    FinSi
+    
+    // RESULTADO
+    Escribir "Total a pagar: ", tarifa
+FinAlgoritmo
+
+
+//CORRIDA MANUAL
+horas=10, noct='S'.
+Cálculo:
+tarifa=10*1.5=15. 10>8 -> tarifa=15*1.25=18.75. noct='S' -> tarifa=18.75*1.3=24.37.
+Resultado: 24.37.
