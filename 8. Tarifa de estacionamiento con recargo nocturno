@@ -1,4 +1,4 @@
-algoritmo ()
+algoritmo TarifaEstacionamiento ()
 inicio 
   //DECLARACIONES 
     Definir horas, tarifa Como Real
