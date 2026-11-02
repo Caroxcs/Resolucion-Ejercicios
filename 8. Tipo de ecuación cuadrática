@@ -1,0 +1,31 @@
+algoritmo EcuacionCuadratica () 
+inicio 
+  //DECLARACIONES
+    Definir a, b, c, disc Como Real
+    Definir msj Como Caracter
+    
+    // CUERPO
+    Escribir "Ingrese a, b, c:"
+    Leer a, b, c
+    
+    // CALCULO
+    disc <- (b * b) - (4 * a * c)
+    Si disc > 0 Entonces
+        msj <- "Dos soluciones reales"
+    Sino
+        Si disc = 0 Entonces
+            msj <- "Una solucion real"
+        Sino
+            msj <- "Ninguna solucion real"
+        FinSi
+    FinSi
+    
+    // RESULTADO
+    Escribir msj
+FinAlgoritmo
+
+//CORRIDA MANUAL
+a=1, b=0, c=-4. 
+Cálculo: 
+disc = 0 - 4(1)(-4) = 16. 16>0.
+Resultado: Dos soluciones reales.
