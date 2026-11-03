@@ -1,0 +1,29 @@
+algoritmo SimulacionAhorro ()
+inicio 
+  //DECLARACIONES
+    Definir n, i Como Entero
+    Definir aporte, saldo Como Real
+
+    // CUERPO
+    saldo <- 0
+    Escribir "Ingrese meses (N):"
+    Leer n
+
+    // CALCULO
+    i <- 1
+    Mientras i <= n Hacer
+        Escribir "Aporte mes ", i, ":"
+        Leer aporte
+        saldo <- saldo + aporte
+        saldo <- saldo + (saldo * 0.008)
+        i <- i + 1
+    FinMientras
+
+    // RESULTADO
+    Escribir "Saldo final: ", saldo
+FinAlgoritmo
+
+//CORRIDA MANUAL  
+Datos: n=2. 
+Cálculo: i=1(ap=100, sal=100.8), i=2(ap=100, sal=200.8 + 1.6=202.4).
+Resultado: 202.4.
