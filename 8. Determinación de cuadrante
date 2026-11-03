@@ -1,0 +1,35 @@
+algoritmo DeterminacionCuadrante ()
+inicio 
+  //DECLARACIONES
+    Definir x, y Como Real
+    Definir pos Como Caracter
+    
+    // CUERPO
+    Escribir "Ingrese x e y:"
+    Leer x, y
+    
+    // CALCULO
+    Si x = 0 Y y = 0 Entonces
+        pos <- "Origen"
+    Sino Si x = 0 Entonces
+        pos <- "Eje Y"
+    Sino Si y = 0 Entonces
+        pos <- "Eje X"
+    Sino Si x > 0 Y y > 0 Entonces
+        pos <- "Cuadrante I"
+    Sino Si x < 0 Y y > 0 Entonces
+        pos <- "Cuadrante II"
+    Sino Si x < 0 Y y < 0 Entonces
+        pos <- "Cuadrante III"
+    Sino
+        pos <- "Cuadrante IV"
+    FinSi FinSi FinSi FinSi FinSi FinSi
+    
+    // RESULTADO
+    Escribir pos
+FinAlgoritmo
+
+//CORRIDA MANUAL 
+Datos: x=-2, y=3. 
+Cálculo: x<0 y y>0 -> Cuadrante II. 
+Resultado: Cuadrante II.
