@@ -1,0 +1,25 @@
+algoritmo InversionNumero ()
+inicio 
+    // DECLARACION
+    Definir num, inv, dig Como Entero
+    
+    // CUERPO
+    inv <- 0
+    Escribir "Ingrese numero:"
+    Leer num
+    
+    // CALCULO
+    Mientras num > 0 Hacer
+        dig <- num MOD 10
+        inv <- (inv * 10) + dig
+        num <- TRUNC(num / 10)
+    FinMientras
+    
+    // RESULTADO
+    Escribir "Invertido: ", inv
+FinAlgoritmo
+
+//CORRIDA MANUAL 
+num=12.
+Cálculo: i=1(dig=2, inv=2, num=1). i=2(dig=1, inv=21, num=0). 
+Resultado: 21.
