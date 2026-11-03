@@ -1,0 +1,36 @@
+algoritmo DescuentoVolumen ()
+inicio
+  // DECLARACION
+    Definir monto, base, dcto, total Como Real
+    Definir frec Como Caracter
+    
+    // CUERPO
+    Escribir "Ingrese monto y cliente frecuente (S/N):"
+    Leer monto, frec
+    
+    // CALCULO
+    Si monto >= 500 Entonces
+        base <- 15
+    Sino Si monto >= 300 Entonces
+        base <- 10
+    Sino Si monto >= 100 Entonces
+        base <- 5
+    Sino
+        base <- 0
+    FinSi FinSi FinSi
+    Si frec = "S" O frec = "s" Entonces
+        dcto <- base + 5
+    Sino
+        dcto <- base
+    FinSi
+    total <- monto - (monto * dcto / 100)
+    
+    // RESULTADO
+    Escribir "Total a pagar: ", total
+FinAlgoritmo
+
+//CORRIDA MANUAL
+monto=400, frec='S'. 
+Cálculo: 
+400>=300 -> base=10. frec='S' -> dcto=10+5=15. total=400-(400*15/100)=340. 
+Resultado: 340.
