@@ -1,0 +1,65 @@
+algortmo NumeroArmstrong ()
+inicio 
+  //DECLARACIONES
+    Definir num, temp, digito, suma Como Entero
+    
+    //CUERPO
+    Escribir "Ingrese un número de tres dígitos:"
+    Leer num
+    
+    // CALCULO
+    Si num >= 100 Y num <= 999 Entonces
+        temp <- num
+        suma <- 0
+        
+        Mientras temp > 0 Hacer
+            digito <- temp MOD 10
+            suma <- suma + (digito * digito * digito)
+            temp <- Trunc(temp / 10)
+        FinMientras
+        
+        // RESULTADO
+        Si suma = num Entonces
+            Escribir "El número ", num, " ES un número de Armstrong."
+        Sino
+            Escribir "El número ", num, " NO es un número de Armstrong."
+        FinSi
+    Sino
+        Escribir "Error: Por favor, ingrese exactamente un número de tres dígitos."
+    FinSi
+FinAlgoritmo
+
+//CORRIDA MANUAL
+Número a evaluar: 153
+
+Variables iniciales:
+num = 153
+temp = 153
+suma = 0
+
+--- Inicio del ciclo (Mientras temp > 0) ---
+Iteración 1:
+- Condición: ¿temp > 0? -> (153 > 0) VERDADERO
+- digito = 153 MOD 10 -> 3
+- suma = 0 + (3 * 3 * 3) -> 0 + 27 = 27
+- temp = 153 / 10 -> 15 (División entera)
+
+Iteración 2:
+- Condición: ¿temp > 0? -> (15 > 0) VERDADERO
+- digito = 15 MOD 10 -> 5
+- suma = 27 + (5 * 5 * 5) -> 27 + 125 = 152
+- temp = 15 / 10 -> 1
+
+Iteración 3:
+- Condición: ¿temp > 0? -> (1 > 0) VERDADERO
+- digito = 1 MOD 10 -> 1
+- suma = 152 + (1 * 1 * 1) -> 152 + 1 = 153
+- temp = 1 / 10 -> 0
+
+Iteración 4:
+- Condición: ¿temp > 0? -> (0 > 0) FALSO
+- Fin del ciclo.
+
+resultado
+- Condición: ¿suma = num? -> (153 = 153) VERDADERO
+- Salida en pantalla: "El número 153 ES un número de Armstrong."
