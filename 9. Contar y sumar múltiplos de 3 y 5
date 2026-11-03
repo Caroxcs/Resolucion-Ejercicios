@@ -1,0 +1,31 @@
+algoritmo Multiplos3y5 ()
+inicio   
+  //DECLARACIONES 
+    Definir n, i, cont, suma Como Entero
+    
+    // CUERPO
+    cont <- 0
+    suma <- 0
+    Escribir "Ingrese N:"
+    Leer n
+    
+    // CALCULO
+    i <- 1
+    Mientras i <= n Hacer
+        Si (i MOD 3 = 0) O (i MOD 5 = 0) Entonces
+            cont <- cont + 1
+            suma <- suma + i
+        FinSi
+        i <- i + 1
+    FinMientras
+    
+    // RESULTADO
+    Escribir "Cantidad: ", cont, " Suma: ", suma
+FinAlgoritmo
+
+
+//CORRIDA MANUAL
+Datos: n=6. 
+Cálculo: i=1(no), i=2(no), i=3(si, cont=1, sum=3), i=4(no), i=5(si, cont=2, sum=8), 
+i=6(si, cont=3, sum=14), i=7(sale del ciclo).
+Resultado: Cantidad: 3, Suma: 14.
