@@ -1,0 +1,47 @@
+algoritmo DescuentolibreriaLoja ()
+inicio 
+  //DECLARACIONES 
+  definir estudiante como cadena
+  definir monto, descuento, montoFinal  como real 
+
+  //CUERPO
+  Escribir "Es estudiante de la UTPL (SI/NO)"
+  leer estudiante
+  Escribir "ingrese el monto de la compra"
+  leer monto
+
+  descuento = 0 
+  descuento <- 0.0
+    Si estudiante = "si" Entonces
+        Si monto > 30 Entonces
+            descuento <- 0.25
+            Escribir "Descuento aplicado: 25% (Estudiante UTPL con compra > $30)"
+        SiNo
+            descuento <- 0.20
+            Escribir "Descuento aplicado: 20% (Estudiante UTPL)"
+        FinSi
+    SiNo
+        Si monto > 50 Entonces
+            descuento <- 0.10
+            Escribir "Descuento aplicado: 10% (No estudiante con compra > $50)"
+        SiNo
+            descuento <- 0.0
+            Escribir "Sin descuento aplicado."
+        FinSi
+    FinSi
+
+    montoFinal = monto - (monto * descueto)
+
+    //RESPUESTA
+    Escribir " el monto final a pagar es de: ", montoFinal
+fin 
+
+//CORRIDA MANUAL
+Entrada: estudiante = "si"
+monto = 40.0 ¿estudiante == "si"? Verdadero.¿monto > 30? Verdadero ($40 > 30$) 
+descuento = 0.25
+Cálculo: montoFinal = 40.0 - (40.0 * 0.25) = 40.0 - 10.0 = 30.0
+Salida: Monto final a pagar: 30.0.
+
+  
+  
