@@ -1,0 +1,38 @@
+Algoritmo ClasificacionTemperaturaLoja ()
+inicio 
+    //DECLARAIONES
+    Definir temeperatura como real 
+    definir Clasificacion, alerta como cadena
+
+    //CUERPO 
+    Escribir "Ingrese la temperatura registrada en loja"
+    leer temperatura 
+
+    alerta = ""
+    Si temperatura < 15 Entonces
+        clasificacion <- "Frío"
+    SiNo
+        Si temperatura <= 25 Entonces
+            clasificacion <- "Templado"
+        SiNo
+            clasificacion <- "Cálido"
+            Si temperatura > 30 Entonces
+                alerta <- "Alerta: Calor extremo"
+            FinSi
+        FinSi
+    FinSi
+    
+    Escribir "Clasificación: ", clasificacion
+    Si alerta <> "" Entonces
+        Escribir alerta
+    FinSi
+Fin
+
+//CORRIDA MANUAL
+Entrada: temperatura = 32.5
+¿temperatura < 15? Falso.
+¿temperatura <= 25? Falso.
+Bloque Cálido: clasificacion = "Cálido".
+¿temperatura > 30? Verdadero (32.5 > 30) 
+alerta = "¡Alerta: Calor extremo!".
+Salida: Clasificación: Cálido / Alerta: Calor extremo
