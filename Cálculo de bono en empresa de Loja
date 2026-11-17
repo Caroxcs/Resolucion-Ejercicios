@@ -1,0 +1,44 @@
+Algoritmo BonoEmpresaLoja ()
+inicio
+    // DECLARACIONES
+    Definir antiguedad Como Entero
+    Definir sueldo, porcentajeBono, bono, sueldoTotal Como Real
+    Definir evaluacionExcelente Como Cadena
+    
+    // ENTRADA DE DATOS
+    Escribir "Ingrese los años de antigüedad: "
+    Leer antiguedad
+    Escribir "Ingrese el sueldo: "
+    Leer sueldo
+    Escribir "La evaluación es excelente? (si/no): "
+    Leer evaluacionExcelente
+    
+    // CÁLCULO
+    porcentajeBono <- 0.0
+    Si antiguedad > 2 Entonces
+        Si evaluacionExcelente = "si" Entonces
+            porcentajeBono <- 0.15
+        SiNo
+            porcentajeBono <- 0.10
+        FinSi
+    SiNo
+        Si evaluacionExcelente = "si" Entonces
+            porcentajeBono <- 0.05
+        SiNo
+            porcentajeBono <- 0.0
+        FinSi
+    FinSi
+    
+    bono <- sueldo * porcentajeBono
+    sueldoTotal <- sueldo + bono
+    
+    // SALIDA
+    Escribir "Bono calculado: $", bono
+    Escribir "Sueldo total a pagar: $", sueldoTotal
+Fin
+
+//CORRIDA MANUAL
+Entrada: antiguedad = 3, sueldo = 500.0, evaluacionExcelente = "si"
+¿Antigüedad > 2? Sí ¿Evaluación excelente? Sí  porcentaje
+Bono = 0.15.bono = 500.0 * 0.15 = 75.0, sueldoTotal = 500.0 + 75.0 = 575.0
+Salida: Bono calculado: $75.0 / Sueldo total: $575.0.
