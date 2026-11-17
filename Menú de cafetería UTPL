@@ -1,4 +1,5 @@
-Algoritmo MenuCafeteria
+Algoritmo MenuCafeteria ()
+inicio
     // DECLARACIONES
     Definir opcion Como Entero
     
