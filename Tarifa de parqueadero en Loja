@@ -1,0 +1,38 @@
+Algoritmo TarifaParqueadero ()
+inicio
+    // DECLARACIONES
+    Definir esEstudiante Como Cadena
+    Definir horas, tarifaBase, tarifaDescontada, montoFinal Como Real
+    
+    // ENTRADA DE DATOS
+    Escribir "Es estudiante UTPL? (si/no): "
+    Leer esEstudiante
+    Escribir "Ingrese las horas de permanencia: "
+    Leer horas
+    
+    // CÁLCULO
+    tarifaBase <- horas * 1.00
+    Si esEstudiante = "si" Entonces
+        tarifaDescontada <- tarifaBase * 0.50
+        Si horas > 4 Entonces
+            montoFinal <- tarifaDescontada * 1.20
+        SiNo
+            montoFinal <- tarifaDescontada
+        FinSi
+    SiNo
+        tarifaDescontada <- tarifaBase
+        Si horas > 6 Entonces
+            montoFinal <- tarifaDescontada * 1.20
+        SiNo
+            montoFinal <- tarifaDescontada
+        FinSi
+    FinSi
+    
+    // SALIDA
+    Escribir "El monto a pagar es: $", montoFinal
+Fin
+
+//CORRIDA MANUAL
+Entrada: esEstudiante = "si", horas = 5.0
+Base = $5.0  Descuento estudiante (50%) = $2.5  Horas > 4 aplica recargo del 20% = $2.5 * 1.20 = 3.0$
+Salida: El monto a pagar es: $3.0.
