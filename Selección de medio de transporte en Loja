@@ -1,0 +1,23 @@
+Algoritmo TransporteLoja ()
+inicio
+    // DECLARACIONES
+    Definir opcion Como Entero
+    
+    // ENTRADA DE DATOS
+    Escribir "1. Bus | 2. Taxi | 3. Bicicleta | 4. Caminar"
+    Escribir "Seleccione opción: "
+    Leer opcion
+    
+    // SALIDA / SELECCIÓN MÚLTIPLE
+    Segun opcion Hacer
+        1: Escribir "Bus: 25-35 min. Económico."
+        2: Escribir "Taxi: 10-15 min. Rápido y directo."
+        3: Escribir "Bicicleta: 20-25 min. Ecológico."
+        4: Escribir "Caminar: 60-75 min. Ejercicio saludable."
+        De Otro Modo: Escribir "Opción no válida."
+    FinSegun
+Fin
+
+//CORRIDA MANUAL
+Entrada 2
+Salida: Taxi: 10-15 min. Rápido y directo.
