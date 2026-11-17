@@ -1,0 +1,23 @@
+Algoritmo ClasificacionNotas ()
+inicio
+    // DECLARACIONES
+    Definir letra Como Cadena
+    
+    // ENTRADA DE DATOS
+    Escribir "Ingrese la letra (A, B, C, D, F): "
+    Leer letra
+    
+    // SALIDA / SELECCIÓN MÚLTIPLE
+    Segun letra Hacer
+        "A", "a": Escribir "Rango: 9.0 - 10.0"
+        "B", "b": Escribir "Rango: 8.0 - 8.9"
+        "C", "c": Escribir "Rango: 7.0 - 7.9"
+        "D", "d": Escribir "Rango: 6.0 - 6.9"
+        "F", "f": Escribir "Rango: 0.0 - 5.9"
+        De Otro Modo: Escribir "Letra no válida."
+    FinSegun
+Fin
+
+//CORRIDA MANUAL 
+Entrada "B" 
+Salida: Rango: 8.0 - 8.9
