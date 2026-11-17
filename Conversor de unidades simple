@@ -1,0 +1,35 @@
+Algoritmo ConversorUnidades ()
+inicio
+    // DECLARACIONES
+    Definir opcion Como Entero
+    Definir valor, resultado Como Real
+    
+    // ENTRADA DE DATOS
+    Escribir "1. Kilómetros a metros"
+    Escribir "2. Metros a centímetros"
+    Escribir "3. Horas a minutos"
+    Escribir "Seleccione una opción: "
+    Leer opcion
+    Si opcion >= 1 Y opcion <= 3 Entonces
+        Escribir "Ingrese el valor: "
+        Leer valor
+    FinSi
+    
+    // CÁLCULO
+    Segun opcion Hacer
+        1: resultado <- valor * 1000
+        2: resultado <- valor * 100
+        3: resultado <- valor * 60
+    FinSegun
+    
+    // SALIDA
+    Si opcion >= 1 Y opcion <= 3 Entonces
+        Escribir "Resultado de la conversión: ", resultado
+    SiNo
+        Escribir "Opción inválida."
+    FinSi
+Fin
+
+//CORRIDA MANUAL
+Entrada 2, valor 2.5 
+Resultado: 250.0.
