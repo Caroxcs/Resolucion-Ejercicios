@@ -1,0 +1,39 @@
+algoritmo AccesooLaboratorioComputo ()
+inicio 
+    // DECLARACIONES
+    Definir esEstudiante, tieneCarne, tieneAutorizacion, resultado Como Cadena
+    
+    // ENTRADA DE DATOS
+    Escribir "Es estudiante? (si/no): "
+    Leer esEstudiante
+    
+    // CÁLCULO
+    resultado <- ""
+    Si esEstudiante = "si" Entonces
+        Escribir "Tiene carné vigente? (si/no): "
+        Leer tieneCarne
+        Si tieneCarne = "si" Entonces
+            resultado <- "Acceso permitido"
+        SiNo
+            resultado <- "Acceso denegado (Carné no vigente)"
+        FinSi
+    SiNo
+        Escribir "Tiene autorización especial? (si/no): "
+        Leer tieneAutorizacion
+        Si tieneAutorizacion = "si" Entonces
+            resultado <- "Ingreso temporal"
+        SiNo
+            resultado <- "Acceso denegado"
+        FinSi
+    FinSi
+    
+    // SALIDA
+    Escribir "Resultado: ", resultado
+FinAlgoritmo
+
+//CORRIDA MANUAL
+Entrada: esEstudiante = "no",
+tieneAutorizacion = "si
+"Rama siNo Pregunta autorización  Sí 
+resultado = "Ingreso temporal"
+.Salida: Resultado: Ingreso temporal
